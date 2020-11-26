@@ -37,15 +37,17 @@
 	</dependencies>
 	<build>
 		<finalName>SpringFormApp</finalName>
-		<plugin>
-   			<groupId>org.codehaus.mojo</groupId>
-   			<artifactId>tomcat-maven-plugin</artifactId>
-   			<configuration>
-        			<url>http://localhost:2020/manager/text</url>
-        			<server>myserver</server>
-        			<path>/target</path>
-   			</configuration>
-		</plugin>
+		<plugins>
+			<plugin>
+   				<groupId>org.codehaus.mojo</groupId>
+   				<artifactId>tomcat-maven-plugin</artifactId>
+   				<configuration>
+        				<url>http://localhost:2020/manager/text</url>
+        				<server>myserver</server>
+        				<path>/target</path>
+   				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 	<properties>
     		<maven.compiler.source>1.6</maven.compiler.source>
